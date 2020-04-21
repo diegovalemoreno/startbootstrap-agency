@@ -10001,6 +10001,102 @@ img::-moz-selection {
   background: transparent;
 }
 
+/*=======================================================
+			COLORS (Only Visible In Scss File):
+========================================================*/
+/*=======================================================
+			TOP SLIDER:
+========================================================*/
+.slider-area {
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.slider-area .single-slide {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100vh;
+  height: 100vh;
+}
+.slider-area .single-slide .btn {
+  margin-bottom: 15px;
+}
+.slider-area .single-slide:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #1f4d21;
+}
+.slider-area .slide-bg-1 {
+  background-image: url("https://via.placeholder.com/1920x1080");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slider-area .slide-bg-2 {
+  background-image: url("https://via.placeholder.com/1920x1080");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slider-area .tabel {
+  display: table;
+  width: 100%;
+}
+.slider-area .tabel .tabel-cell {
+  display: table-cell;
+  height: 40em;
+  vertical-align: middle;
+}
+.slider-area .tabel .tabel-cell .slider-content {
+  padding: 0 40px;
+}
+.slider-area .tabel .tabel-cell .slider-content h1 {
+  margin: 20px 0;
+}
+.slider-area .tabel .tabel-cell .slider-content .btn-white {
+  margin-left: 20px;
+}
+.slider-area .owl-dots {
+  bottom: 2.5%;
+  right: 50%;
+  position: relative;
+}
+.slider-area .owl-dots div.owl-dot {
+  background-color: transparent;
+  border: 2px solid #1f4d21;
+  border-radius: 100px;
+  bottom: -25px;
+  display: inline-block;
+  height: 12px;
+  left: 50%;
+  margin-right: 10px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+  width: 12px;
+}
+.slider-area .owl-dots div.owl-dot.active {
+  background-color: #8aecec;
+}
+
+.slider-area:after {
+  content: "";
+  position: absolute;
+  bottom: -1%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  background: transparent;
+  background-size: 100% 100%;
+  background-image: url(../img/bottom-wave.png);
+}
+
 .btn-xl {
   padding: 1.25rem 2.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10092,7 +10188,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/sp-bg.jpg");
+  background-image: url("../assets/img/sp3-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;

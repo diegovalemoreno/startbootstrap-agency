@@ -13,7 +13,7 @@ html(lang='en')
         link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
 
         // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v5.12.1/js/all.js', crossorigin='anonymous')
+        script(src='', crossorigin='anonymous')
 
         // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
@@ -29,16 +29,18 @@ html(lang='en')
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             .container
                 a.navbar-brand.js-scroll-trigger(href='#page-top')
-                    img(src='assets/img/navbar-logo.svg')
+                    //- img(src='assets/img/navbar-logo.svg')
                 button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars.ml-1
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ml-auto
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#services') Services
+                            a.nav-link.js-scroll-trigger(href='#page-top') Home
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#portfolio') Portfolio
+                            a.nav-link.js-scroll-trigger(href='#services') Serviços
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#portfolio') Parceiros
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#about') About
                         li.nav-item
@@ -56,7 +58,7 @@ html(lang='en')
         section#services.page-section
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Services
+                    h2.section-heading.text-uppercase Serviços
                     h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
                 .row.text-center
                     .col-md-4
@@ -85,8 +87,8 @@ html(lang='en')
         section#portfolio.page-section.bg-light
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Portfolio
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h2.section-heading.text-uppercase Parceiros
+                    h3.section-subheading.text-muted São vários os tipos de serviços .
                 .row
                     .col-lg-4.col-sm-6.mb-4
                         .portfolio-item
@@ -118,6 +120,39 @@ html(lang='en')
                             .portfolio-caption
                                 .portfolio-caption-heading Finish
                                 .portfolio-caption-subheading.text-muted Identity
+
+                    .col-lg-4.col-sm-6.mb-4.mb-lg-0
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal4')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/04-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Lines
+                                .portfolio-caption-subheading.text-muted Branding
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal5')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/05-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Southwest
+                                .portfolio-caption-subheading.text-muted Website Design
+                    .col-lg-4.col-sm-6
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal6')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/06-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Window
+                                .portfolio-caption-subheading.text-muted Photography
+                                .col-lg-4.col-sm-6
+
                     .col-lg-4.col-sm-6.mb-4.mb-lg-0
                         .portfolio-item
                             a.portfolio-link(data-toggle='modal', href='#portfolioModal4')
@@ -138,7 +173,7 @@ html(lang='en')
                             .portfolio-caption
                                 .portfolio-caption-heading Southwest
                                 .portfolio-caption-subheading.text-muted Website Design
-                    .col-lg-4.col-sm-6
+                    .col-lg-4.col-sm-6.mb-4.mb-sm-0
                         .portfolio-item
                             a.portfolio-link(data-toggle='modal', href='#portfolioModal6')
                                 .portfolio-hover
@@ -148,6 +183,9 @@ html(lang='en')
                             .portfolio-caption
                                 .portfolio-caption-heading Window
                                 .portfolio-caption-subheading.text-muted Photography
+                                .col-lg-4.col-sm-6
+
+
 
         // About
         section#about.page-section
